@@ -14,11 +14,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tictactoe.AppController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="445.0" prefWidth="600.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tictactoe.AppController">
    <children>
       <Pane layoutX="186.0" layoutY="9.0" prefHeight="50.0" prefWidth="200.0">
          <children>
-            <Label id="labelttt" layoutX="93.0" layoutY="11.0" text="TicTacToe">
+            <Label id="labelttt" layoutX="93.0" layoutY="11.0" style="-fx-font-size: 25px;" text="TicTacToe">
                <font>
                   <Font name="Avenir Light Oblique" size="19.0" />
                </font>
@@ -38,15 +38,15 @@
         </rowConstraints>
          <children>
             <Button mnemonicParsing="false" text="Button" />
-            <Button id="button01" fx:id="button01" layoutX="10.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="103.0" text=" " GridPane.columnIndex="1" />
-            <Button id="burtton10" fx:id="button10" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="104.0" text=" " GridPane.rowIndex="1" />
-            <Button id="button20" fx:id="button20" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="105.0" text=" " GridPane.rowIndex="2" />
-            <Button id="button21" fx:id="button21" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="105.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button id="button12" fx:id="button12" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="109.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button id="button00" fx:id="button00" layoutX="143.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="87.0" prefWidth="105.0" text=" " />
-            <Button id="button22" fx:id="button22" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="104.0" style="-fx-background-radius: 10;" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button id="button02" fx:id="button02" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="87.0" prefWidth="106.0" text=" " GridPane.columnIndex="2" />
-            <Button id="button11" fx:id="button11" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="89.0" prefWidth="102.0" style="-fx-border-radius: 20px;" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button id="button01" fx:id="button01" layoutX="10.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="103.0" style="-fx-font-size: 25;" text=" " GridPane.columnIndex="1" />
+            <Button id="burtton10" fx:id="button10" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="104.0" style="-fx-font-size: 25;" text=" " GridPane.rowIndex="1" />
+            <Button id="button20" fx:id="button20" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="105.0" style="-fx-font-size: 25;" text=" " GridPane.rowIndex="2" />
+            <Button id="button21" fx:id="button21" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="88.0" prefWidth="105.0" style="-fx-font-size: 25;" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button id="button12" fx:id="button12" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="109.0" style="-fx-font-size: 25px;" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="button00" fx:id="button00" layoutX="143.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="87.0" prefWidth="105.0" style="-fx-font-size: 25;" text=" " />
+            <Button id="button22" fx:id="button22" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="86.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-font-size: 25;" text=" " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button id="button02" fx:id="button02" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="87.0" prefWidth="106.0" style="-fx-font-size: 25;" text=" " GridPane.columnIndex="2" />
+            <Button id="button11" fx:id="button11" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="89.0" prefWidth="102.0" style="-fx-border-radius: 20px; -fx-font-size: 25;" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
          <opaqueInsets>
             <Insets />
@@ -58,7 +58,7 @@
                <children>
                   <Pane prefHeight="39.0" prefWidth="191.0">
                      <children>
-                        <Label layoutX="88.0" layoutY="10.0" prefHeight="18.0" prefWidth="69.0" text="playerX" />
+                        <Label layoutX="96.0" layoutY="8.0" prefHeight="18.0" prefWidth="69.0" style="-fx-font-size: 20;" text="playerX" />
                         <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons8-fond-de-teint-48.png" />
@@ -66,10 +66,10 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <TextField id="scorex" fx:id="scorex" layoutX="213.0" layoutY="3.0" prefHeight="26.0" prefWidth="48.0" text="score" />
+                  <TextField id="scorex" fx:id="scorex" editable="false" layoutX="213.0" layoutY="3.0" prefHeight="26.0" prefWidth="48.0" text="0" />
                   <Pane layoutX="6.0" layoutY="49.0" prefHeight="39.0" prefWidth="191.0">
                      <children>
-                        <Label layoutX="88.0" layoutY="10.0" prefHeight="18.0" prefWidth="69.0" text="playerY" />
+                        <Label layoutX="88.0" layoutY="10.0" prefHeight="18.0" prefWidth="69.0" style="-fx-font-size: 20;" text="playerY" />
                         <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons8-fond-de-teint-48.png" />
@@ -77,19 +77,21 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <TextField id="scoreo" fx:id="scoreo" layoutX="213.0" layoutY="49.0" prefHeight="26.0" prefWidth="48.0" text="score" />
+                  <TextField id="scoreo" fx:id="scoreo" editable="false" layoutX="213.0" layoutY="49.0" prefHeight="26.0" prefWidth="48.0" text="0" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button layoutX="30.0" layoutY="20.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="208.0" text="New Game" />
+                  <Button layoutX="30.0" layoutY="20.0" mnemonicParsing="false" onAction="#newGame" prefHeight="31.0" prefWidth="208.0" text="New Game" />
                   <Button fx:id="reset" layoutX="30.0" layoutY="68.0" mnemonicParsing="false" onAction="#resetButtonClick" text="Reset" />
                   <Button fx:id="exit" layoutX="171.0" layoutY="68.0" mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
                </children>
             </AnchorPane>
          </children>
       </VBox>
-      <Label fx:id="turnx" layoutX="374.0" layoutY="340.0" text="turnx" />
-      <Label fx:id="turny" layoutX="500.0" layoutY="340.0" text="turny" />
+      <Label fx:id="turnx" layoutX="374.0" layoutY="340.0" style="-fx-font-size: 20;" text="TURN : X" />
+      <Label fx:id="turny" layoutX="500.0" layoutY="340.0" style="-fx-font-size: 20;" text="TURN:Y" />
+      <Label id="messqge" fx:id="message" alignment="CENTER" cacheShape="false" layoutX="31.0" layoutY="358.0" prefHeight="18.0" prefWidth="310.0" style="-fx-font-size: 16px; -fx-background-color: #eee; -fx-text-fill: green;" textAlignment="CENTER" />
+      <TextField accessibleRole="IMAGE_VIEW" alignment="CENTER" editable="false" layoutX="7.0" layoutY="418.0" style="-fx-border-radius: 0; bor: aqua;" text="Diallo Sidy" />
    </children>
 </AnchorPane>

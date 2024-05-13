@@ -22,11 +22,13 @@ public class AppController {
     @FXML
     public TextField scoreo;
 
+
     @FXML
     public Label turnx;
 
     @FXML
     public Label turny;
+    public Label message;
 
     @FXML
     private Button reset;
@@ -78,10 +80,11 @@ public class AppController {
     public void clean() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                buttons[i][j].setText("");
+                buttons[i][j].setText(" ");
             }
         }
         winner = " ";
+        message.setText(" ");
     }
 
     public boolean gagne() {
@@ -146,8 +149,20 @@ public class AppController {
 
     @FXML
     public void resetButtonClick(ActionEvent actionEvent) {
+        scx = 0;
+        scy = 0;
+        scorex.setText(Integer.toString(scx));
+        scoreo.setText(Integer.toString(scy));
         clean();
+        turn='x';
     }
+    @FXML
+    public void newGame(ActionEvent actionEvent) {
+
+        clean();
+        turn='x';
+    }
+
 
     @FXML
     public void exitButtonClick(ActionEvent actionEvent) {
@@ -171,10 +186,17 @@ public class AppController {
             }
             updateScore();
             if (gagne()) {
-                // Mettez ici le code pour annoncer le vainqueur et peut-être proposer de commencer une nouvelle partie
+                if (winner.equals("x")) {
+                    message.setText("Player X wins Party!");
+                }
+                if (winner.equals("o")) {
+                    message.setText("Player O wins Party!");
+                }
+
             } else if (matchNull()) {
-                // Mettez ici le code pour annoncer que le match est nul et peut-être proposer de commencer une nouvelle partie
+                message.setText("No winner!");
             }
         }
     }
+
 }
