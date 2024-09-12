@@ -31,6 +31,24 @@ Le projet est organisé en trois classes principales :
 1. Clonez le dépôt ou téléchargez le projet.
 2. Assurez-vous que Java et JavaFX sont correctement configurés.
 3. Compilez et exécutez le projet via votre IDE ou en ligne de commande :
-   ```bash
+   
    javac -d bin src/com/tictactoe/*.java
    java -cp bin com.tictactoe.Application
+
+## 🎯 Utilisation
+
+- 🕹️ Les joueurs cliquent à tour de rôle sur les boutons de la grille pour placer leur symbole (`X` ou `O`).
+- 🏆 Le jeu détecte automatiquement un gagnant ou un match nul.
+- 📊 Le score est mis à jour en fonction des résultats.
+- 🔄 Utilisez le bouton "Reset" pour réinitialiser les scores, ou "New Game" pour démarrer une nouvelle partie.
+
+## 🚧 Améliorations futures
+
+- 🤖 Ajout d'une option pour jouer contre une IA.
+- 🎨 Amélioration de l'interface avec des animations.
+- 🧩 Support pour des grilles de tailles différentes (ex : 4x4, 5x5).
+
+## 👨‍💻 Auteurs
+
+- **[DIALLO SIDY]** - Développeur principal
+
